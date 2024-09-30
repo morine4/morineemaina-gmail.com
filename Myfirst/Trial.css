@@ -1,0 +1,182 @@
+h1
+{
+    color: rgb(223, 232, 233);
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    font-variant: inherit;
+    font-stretch: extra-expanded;
+    position: absolute;
+    top: 330px;
+    left: 100px;
+}
+body
+{
+    background-image: url('/images/Naturee.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+img:hover
+{
+    transform: scale(1.05) rotate(5 deg);
+    box-shadow: 0 6px 12px rgba(110, 245, 47, 0.3);
+
+}
+img
+{
+    width: 30 px;
+    height: 30;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid rgba(236, 226, 226, 0.925);
+     border-radius: 50px;
+     opacity: 0.9;
+     filter: grayscale(0%);
+     transition: all 0.3s;
+     position: absolute;
+     top: 10px;
+     left: 10px;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    padding: 0px 0px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-left: auto;
+    margin-bottom: auto;
+
+}
+nav .logo
+{
+    color: white;
+    font-size: large;
+}
+nav ul
+{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    }
+    nav ul li
+    {
+        margin: 0 15px;
+    }
+    nav ul li a
+    {
+        color: white;
+        text-decoration:none ;
+    }
+    nav ul li a:hover
+    {
+        text-decoration: underline;
+        background-color: blue;
+        color: #000;
+        transition: all 0.3s;
+        transform: scale(1.05s);
+        padding: 2px;
+    }
+    .menu-toggle
+    {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+
+    }
+    @media (max-width:768)
+    {
+        nav ul
+        {
+            display: none;
+            flex-direction: column;
+            width: 100;
+        }
+        nav ul .active
+        {
+            display: flex;
+        }
+        nav ul li 
+        {
+            margin: 10px 0;
+        }
+        .menu-toggle
+        {
+            display: flex;/*shows three lines*/
+        }
+        
+    }
+    section
+    {
+        display: none;
+        padding: 50;
+        margin: 20px 0;
+    }
+    :target
+    {
+        display: block;
+
+    }
+    section:target
+    {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .content-selection 
+    {
+        display: none;
+
+    }
+    .content-section.action
+    {
+        display: block;
+
+    }
+    a :hover
+    {
+        text-decoration: underline;
+    }
+    blockquote
+    {
+        font-style: italic;
+        text-decoration: line-through;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
